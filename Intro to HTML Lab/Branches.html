@@ -1,0 +1,189 @@
+<html>
+    <header>
+
+        <!-- CSS Formatting of the Headers --> 
+        <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #8B4513; /* Brownish-red background */
+            color: #FFF;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #3E2723;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .logo {
+            width: 400px;
+            height: auto;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #5D4037;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #FFF;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #D7CCC8;
+        }
+
+        /* Main Content Area */
+        main {
+            padding: 30px 0;
+            min-height: calc(100vh - 200px);
+        }
+
+        .content {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #FFEBCD;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        
+        table{
+            align-content: center;
+            text-align: center;
+            border-collapse: collapse;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        td {
+            padding: 1rem;
+        }
+        /* Footer Styles */
+        footer {
+            background-color: #3E2723;
+            color: #D7CCC8;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="Digital Espresso Logo.png" alt="Digital Espresso Coffee Logo" class="logo">
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="branches.html">Branches</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="container">
+            <div class="content">
+                <h1>Our Locations</h1>
+                <h2>We're proud to offer vibrant spaces in both Manila and Quezon City where you can enjoy great coffee, work, and connect with others. Here are our locations:</h2>
+                <p></p><p></p>
+                <table class="table">
+                    <tr><th>Branch</th><th>Description</th><th>Contact and Address</th></tr>
+                    <tr><td>Makati</td><td>Located in the heart of Makati, our branch offers a cozy spot to work and relax.</td><td><p>Address: Ayala Center, Makati, Metro Manila</p> <p>Contact: 02 88133739</p> <p>Hours: 8 AM - 10 PM</p></td></tr>
+                    <tr><td>Pasay</td><td>Situated near the bustling Mall of Asia, this branch is perfect for those needing a productive break.</td><td><p>Address: Mall of Asia Complex, Pasay, Metro Manila</p> <p>Contact: 02 88133739</p> <p>Hours: 8 AM - 10 PM</p></td></tr>
+                    <tr><td>Tomas Morato</td><td>Nestled in the vibrant Tomas Morato area, this branch is ideal for remote workers and coffee lovers alike.</td><td><p>Address:  23 Samat St. Corner Banawe, Quezon City</p> <p>Contact: 02 7323229</p> <p>Hours: 8 AM - 10 PM</p></td></tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <img width="5000" height="3500" src="Digital Espresso Footer Logo.png" alt="Digital Espresso Coffee Footer Logo" class="logo">
+                <p>An ITMGT 45 Intro to HTML Class Project.</p>
+                </div>
+                <p>Ateneo de Manila University | ITMGT 45-D Second Semester S.Y. 2024-2025</p>
+                <p>Email: mark.conchada@student.ateneo.edu | Phone: +63 928 393 5555</p>
+            </div>
+        </div>
+    </footer>
+    </header>
+</html>

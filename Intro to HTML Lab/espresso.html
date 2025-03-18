@@ -1,0 +1,293 @@
+<html>
+<header>
+     <!-- CSS Formatting of the Headers --> 
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #3E2723; /* Brownish-red background */
+            color: #FFF;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #3E2723;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .logo {
+            width: 400px;
+            height: auto;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #5D4037;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #FFF;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #D7CCC8;
+        }
+
+        /* Main Content Area */
+        main {
+            padding: 30px 0;
+            min-height: calc(100vh - 200px);
+        }
+
+        .content {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #FFEBCD;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        /* Table Styles */
+        .table-striped {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .table-striped th, 
+        .table-striped td {
+            padding: 12px 15px;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .table-striped th {
+            background-color: #5D4037;
+            color: #FFEBCD;
+            font-weight: bold;
+        }
+
+        .table-striped tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .table-striped tr:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .table-striped a {
+            color: #FFEBCD;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .table-striped a:hover {
+            text-decoration: underline;
+            color: #FFF;
+        }
+
+        .product-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto;
+        }
+        
+
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 16px;
+            background-color: #5D4037;
+            color: #FFF;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-link:hover {
+            background-color: #3E2723;
+        }
+        
+        .table-striped th.image-cell, .table-striped td.image-cell{
+            text-align: center;
+        }
+        /* Footer Styles */
+        footer {
+            background-color: #3E2723;
+            color: #D7CCC8;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: auto;
+            
+            }
+        
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .social-links {
+            margin: 10px 0;
+        }
+
+        .social-links a {
+            color: #D7CCC8;
+            margin: 0 10px;
+            text-decoration: none;
+            
+        }
+
+        .social-links a:hover {
+            color: #FFF;
+        }
+
+        .footerlogo {
+            height: 20%;
+            width: 20%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            .table-striped {
+                font-size: 14px;
+            }
+
+            .product-image {
+                width: 60px;
+                height: 60px;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img img src="Digital Espresso Logo.png" alt="Digital Espresso Coffee Logo" class="logo">
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="branches.html">Branches</a></li>
+                <li><a href="aboutus.html">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="container">
+            <div class="content">
+                <h1>Our Coffee Products</h1>
+                <p>Discover our wide range of premium coffee offerings. Each product is carefully crafted to provide the perfect coffee experience.</p>
+                
+                <table class="table-striped">
+                    <tr>
+                        <th>Code</th>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                    </tr>
+                    <tr>
+                        <td><a href="espresso.html">500</a></td>
+                        <td class="image-cell"><img src="espresso.jfif" alt="Espresso" class="product-image"></td>
+                        <td><a href="espresso.html">Espresso</a>
+                            <p></p>
+                            <p>Our espresso is a concentrated shot of pure coffee goodness, crafted to deliver</p>
+                            <p>a bold and intense flavor that's perfect for those who love a strong coffee kick.</p> 
+                            <p>Enjoy it on its own or as the base for your favorite coffee drinks.</p></td>
+                        <td>₱120</td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="4"><a href="products.html">Back to our official list of products</a></td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <img class="footerlogo" src="Digital Espresso Footer Logo.png" alt="Digital Espresso Coffee Footer Logo">
+                <p>An ITMGT 45 Intro to HTML Class Project.</p>
+                </div>
+                <p>Ateneo de Manila University | ITMGT 45-D Second Semester S.Y. 2024-2025</p>
+                <p>Email: mark.conchada@student.ateneo.edu | Phone: +63 928 393 5555</p>
+            </div>
+        </div>
+    </footer>
