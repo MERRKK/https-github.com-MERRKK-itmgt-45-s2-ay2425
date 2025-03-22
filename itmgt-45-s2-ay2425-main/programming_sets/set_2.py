@@ -152,7 +152,6 @@ def vigenere_cipher(message, key):
     '''
     # Replace `pass` with your code.
     # Stay within the function. Only use the parameters as input. The function should return your answer.
-    pass
     extended_key = (key * ((len(message) + len(key) - 1) // len(key)))[:len(message)]
     encrypted = []
 
@@ -225,14 +224,14 @@ def scytale_cipher(message, shift):
     
     # Check if the length of the message is a multiple of the shift
     if message_length % shift != 0:
-        #if the inputted letter is not enough, add underscores at the end of the message until it becomes
+        #add underscores at the end of the message until it becomes
         ## a multiple of the shift        
         message += "_" * (shift - (message_length % shift))
     
     # Initialize an empty string to store the encoded message
     encoded_message = ""
     
-    # Iterate over each index in the encoded message -> add condition if the message is a multiple of the shift
+    #add condition if the message is a multiple of the shift
 
     for i in range(len(message)):
         # Calculate the index of the character in the raw message
@@ -277,14 +276,14 @@ def scytale_decipher(message, shift):
     # Calculate the number of columns based on the length of the message and number of shifts
     cols = len(message) // rows
     
-    # Add condition that if there are remaining characters, add one more column
+    # Add condition to add 1 more column if there are remaining characters
     if len(message) % rows != 0:
         cols += 1
     
-    # Develop an empty grid with the calculated number of rows and columns
+    # Develop an empty grid with the calculated number of rows and columns based on the conditions above
     grid = [['' for _ in range(cols)] for _ in range(rows)]
     
-    # Message inputs must fill all the grids
+    # Fill the grids via msg input
     index = 0
     for col in range(cols):
         for row in range(rows):
